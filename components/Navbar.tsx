@@ -1,5 +1,11 @@
-import { Link } from "react-scroll"
-import { useState, useEffect } from 'react';
+import { Link } from "react-scroll";
+import { useState, useEffect } from "react";
+
+const navName = {
+  about: "About Me",
+  skill: "Skills",
+  project: "Project",
+};
 
 const Navbar = () => {
   const [fix, setFix] = useState<boolean>(false);
@@ -14,36 +20,46 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", setFixed)
+    window.addEventListener("scroll", setFixed);
     return () => {
       window.removeEventListener("scroll", setFixed);
-    }
-  }, [])
+    };
+  }, []);
 
   const scrollTo = (x: number, y: number) => {
     window.scrollTo(x, y);
-  }
+  };
 
   return (
-    <div className={fix ? 'nav__container__fixed' : 'nav__container'}>
+    <div className={fix ? "nav__container__fixed" : "nav__container"}>
       <div className="nav__wrapper">
         <div className="nav__left">
-          <div className="nav__name" onClick={() => scrollTo(0, 0)}>Portfolio</div>
+          <div className="nav__name" onClick={() => scrollTo(0, 0)}>
+            Portfolio
+          </div>
         </div>
         <div className="nav__right">
           <div className="nav__list">
-            <div className="nav__list-content">
-              <div className="nav__menu" onClick={() => scrollTo(0, 0)}>Home</div>
-              <Link className="nav__menu" to="about" spy={true} smooth={true} duration={0}>
-                <span>About Me</span>
-              </Link>
-              <Link className="nav__menu" to="skill" spy={true} smooth={true} duration={0}>
-                <span>Skills</span>
-              </Link>
-              <Link className="nav__menu" to="project" spy={true} smooth={true} duration={0}>
-                <span>Project</span>
-              </Link>
-            </div>
+            <ul className="nav__list-content">
+              <li className="nav__menu" onClick={() => scrollTo(0, 0)}>
+                Home
+              </li>
+              {Object.entries(navName).map(([key, value]) => {
+                return (
+                  <li key={key}>
+                    <Link
+                      className="nav__menu"
+                      to={key}
+                      spy={true}
+                      smooth={true}
+                      duration={0}
+                    >
+                      <span>{value}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>
