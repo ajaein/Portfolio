@@ -150,7 +150,34 @@ const AboutMe = ({ canvas }: Props) => {
                   </div>
                   <div>
                     · B2B 오픈마켓 서비스 Buybly <br />
-                    &nbsp; - 관리자페이지 구성
+                    &nbsp; - React 프로젝트
+                    <br />
+                    &nbsp; - React-hook-form, Zod도입
+                    <br />
+                    &nbsp; - 관리자페이지, 공급자 페이지, 마켓플레이스 UI개발 및 데이터 통합 (회원 관리, 상품 관리, 상품 등록, 상품리스트 표출, 장바구니 등)
+                    <br />
+                    &nbsp; - 고객사 페이지 세팅 및 UI개발, 데이터 통합
+                    <br />
+                    &nbsp; - 공통 컴포넌트 제작
+                    <br />
+                    &nbsp; - FSD 아키텍쳐 도입
+                    <br />
+                    2024.05 ~
+                    <br />
+                    &nbsp; - Next.js로 마이그레이션
+                    <br />
+                    &nbsp; - Recoil을 Zustand로 마이그레이션
+                    <br />
+                    &nbsp; - Styled-components를 TailwindCSS로 마이그레이션
+                    <br />
+                    &nbsp; - Storybook 도입
+                    <br />
+                    &nbsp; - Repository별 UI관리를 위한 Submodule 도입
+                    <br />
+                    &nbsp; - Next-Auth도입
+                    <br />
+                    &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동 (업, 다운로드)
+                    <br />
                   </div>
                 </div>
               </div>

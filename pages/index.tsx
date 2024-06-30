@@ -6,11 +6,11 @@ import Translator from "../components/Others";
 import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
-import Decommi from "../components/decommi";
 import ProjectAco from "../components/ProjectAco";
 import MyPortfolio from "../components/MyPortfolio";
 import MyBlog from "../components/MyBlog";
 import Career from "../components/Others";
+import Decommi from "../components/decommi";
 
 const Home = () => {
   const [canvas, setCanvas] = useState<number>();
