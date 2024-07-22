@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Career, CareerDetails } from "./career";
 
 type Props = {
   canvas: number | undefined;
@@ -102,22 +103,12 @@ const AboutMe = ({ canvas }: Props) => {
             </div>
             <div className="am-about">
               <div>
-                <div className="am-career">
-                  <div className="iconsize">
-                    <span className="subtitle-text bi bi-pc"></span>
-                  </div>
-                  <div className="am-career__title">
-                    네이버시스템(주) - 프론트엔드 개발자
-                  </div>
-                  <div className="am-career__date">
-                    2023.06 ~ 2023.09 (3개월)
-                  </div>
-                </div>
-                <div className="am-career-detail">
-                  <div className="iconsize">
-                    <span className="none subtitle-text bi bi-pc"></span>
-                  </div>
-                  <div>
+                <Career
+                  title="네이버시스템(주) - 프론트엔드 개발자"
+                  date="2023.06 ~ 2023.09"
+                />
+                <CareerDetails>
+                  <span>
                     · 부천시 미세먼지 포털 서비스 <br />
                     &nbsp; - 공업단지 비산먼지 측정 시스템 실시간 데이터 표출 및
                     데이터 시각화
@@ -133,28 +124,22 @@ const AboutMe = ({ canvas }: Props) => {
                     <br />
                     &nbsp; - 실외공기질 측정자료 조회 데이터 표출
                     <br />
-                  </div>
-                </div>
-                <div className="am-career">
-                  <div className="iconsize">
-                    <span className="subtitle-text bi bi-pc"></span>
-                  </div>
-                  <div className="am-career__title">
-                    (주)레인디어스 - 프론트엔드 개발자
-                  </div>
-                  <div className="am-career__date">2023.09 ~ 재직중</div>
-                </div>
-                <div className="am-career-detail">
-                  <div className="iconsize">
-                    <span className="none subtitle-text bi bi-pc"></span>
-                  </div>
-                  <div>
+                  </span>
+                </CareerDetails>
+                <Career
+                  title="(주)레인디어스 - 프론트엔드 개발자"
+                  date="2023.10 ~ 재직중"
+                />
+                <CareerDetails>
+                  <span>
                     · B2B 오픈마켓 서비스 Buybly <br />
                     &nbsp; - React 프로젝트
                     <br />
                     &nbsp; - React-hook-form, Zod도입
                     <br />
-                    &nbsp; - 관리자페이지, 공급자 페이지, 마켓플레이스 UI개발 및 데이터 통합 (회원 관리, 상품 관리, 상품 등록, 상품리스트 표출, 장바구니 등)
+                    &nbsp; - 관리자페이지, 공급자 페이지, 마켓플레이스 UI개발 및
+                    데이터 통합 (회원 관리, 상품 관리, 상품 등록, 상품리스트
+                    표출, 장바구니 등)
                     <br />
                     &nbsp; - 고객사 페이지 세팅 및 UI개발, 데이터 통합
                     <br />
@@ -176,10 +161,11 @@ const AboutMe = ({ canvas }: Props) => {
                     <br />
                     &nbsp; - Next-Auth도입
                     <br />
-                    &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동 (업, 다운로드)
+                    &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동
+                    (업, 다운로드)
                     <br />
-                  </div>
-                </div>
+                  </span>
+                </CareerDetails>
               </div>
             </div>
           </div>

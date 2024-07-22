@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import AboutMe from "../components/AboutMe";
-import Canvas from "../components/Canvas";
+import Canvas from "../components/canvas/Canvas";
 import Footer from "../components/Footer";
 import Translator from "../components/Others";
 import Navbar from "../components/Navbar";
