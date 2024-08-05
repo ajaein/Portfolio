@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Career, CareerDetails } from "./career";
+import { Career, CareerDetails } from "../career";
+import { InfoItem } from "./AboutInfo";
 
 type Props = {
   canvas: number | undefined;
@@ -53,57 +54,39 @@ const AboutMe = ({ canvas }: Props) => {
             </div>
             <div className="am-about">
               <div className="am-infos">
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="subtitle-text bi bi-person-fill"></p>
-                  </div>
-                  <p>이태일</p>
-                </div>
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="subtitle-text bi bi-calendar-event-fill"></p>
-                  </div>
-                  <p>1993.02.15</p>
-                </div>
+                <InfoItem iconClass="bi bi-person-fill" text="이태일" />
+                <InfoItem
+                  iconClass="bi bi-calendar-event-fill"
+                  text="1993.02.15"
+                />
               </div>
               <div className="am-stroke" />
               <div className="am-infos">
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="subtitle-text bi bi-telephone-fill"></p>
-                  </div>
-                  <p>010-4221-8622</p>
-                </div>
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="subtitle-text bi bi-envelope-fill"></p>
-                  </div>
-                  <p>ofshadows@naver.com</p>
-                </div>
+                <InfoItem
+                  iconClass="bi bi-telephone-fill"
+                  text="010-4221-8622"
+                />
+                <InfoItem
+                  iconClass="bi bi-envelope-fill"
+                  text="ofshadows@naver.com"
+                />
               </div>
-              <div className="am-stroke"></div>
+              <div className="am-stroke" />
               <div className="am-infos-two">
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="subtitle-text bi bi-mortarboard-fill"></p>
-                  </div>
-                  <div className="am-education">
-                    <p>선문대학교 시각디자인학과 졸업(2021)</p>
-                  </div>
-                </div>
-                <div className="am-infos-icontext">
-                  <div className="iconsize">
-                    <p className="none subtitle-text bi bi-mortarboard-fill"></p>
-                  </div>
-                  <div className="am-education">
-                    <p>동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)</p>
-                  </div>
-                </div>
+                <InfoItem
+                  iconClass="bi bi-mortarboard-fill"
+                  text="선문대학교 시각디자인학과 졸업(2021)"
+                  type="double"
+                />
+                <InfoItem
+                  text="동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)"
+                  type="double"
+                />
               </div>
             </div>
             <div className="am-about">
               <div>
-                <Career
+                {/* <Career
                   title="네이버시스템(주) - 프론트엔드 개발자"
                   date="2023.06 ~ 2023.09"
                 />
@@ -125,7 +108,7 @@ const AboutMe = ({ canvas }: Props) => {
                     &nbsp; - 실외공기질 측정자료 조회 데이터 표출
                     <br />
                   </span>
-                </CareerDetails>
+                </CareerDetails> */}
                 <Career
                   title="(주)레인디어스 - 프론트엔드 개발자"
                   date="2023.10 ~ 재직중"
@@ -143,13 +126,13 @@ const AboutMe = ({ canvas }: Props) => {
                     <br />
                     &nbsp; - 고객사 페이지 세팅 및 UI개발, 데이터 통합
                     <br />
-                    &nbsp; - 공통 컴포넌트 제작
+                    &nbsp; - 공통 UI 컴포넌트 제작
                     <br />
                     &nbsp; - FSD 아키텍쳐 도입
                     <br />
                     2024.05 ~
                     <br />
-                    &nbsp; - Next.js로 마이그레이션
+                    &nbsp; - Next.js 14로 마이그레이션
                     <br />
                     &nbsp; - Recoil을 Zustand로 마이그레이션
                     <br />
