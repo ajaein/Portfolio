@@ -1,1 +1,1 @@
-export { useModalToggle } from './useModalTogle'
+export { useModalToggle } from './useModalToggle'

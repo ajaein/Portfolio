@@ -126,7 +126,7 @@ const MyPortfolio: FC<props> = ({ onModal }) => {
               </div>
               <p>- npm install</p>
               <div style={{ marginTop: 10 }}>
-                <b>Run Frontend Server</b>
+                <b>Run Frontend Local Server</b>
               </div>
               <p>- npm run dev</p>
             </div>

@@ -1,15 +1,17 @@
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 export const useModalToggle = (initialState = false) => {
   const [modal, setModal] = useState(initialState);
+  const currentScroll = useRef(0);
 
-  let currentScroll = 0;
+  console.log(currentScroll.current)
+
   const lockScroll = useCallback(() => {
-    const currentScroll = window.scrollY;
+    currentScroll.current = window.scrollY
     document.body.style.overflowY = "scroll";
     document.body.style.position = "fixed";
     document.body.style.width = "100%";
-    document.body.style.top = `${currentScroll}px`;
+    document.body.style.top = `-${currentScroll.current}px`; 
   }, []);
 
   const openScroll = useCallback(() => {
@@ -18,7 +20,7 @@ export const useModalToggle = (initialState = false) => {
     document.body.style.removeProperty("position");
     document.body.style.removeProperty("width");
     document.body.style.removeProperty("top");
-    window.scrollTo(0, currentScroll);
+    window.scrollTo(0, currentScroll.current);
   }, [currentScroll]);
 
   const toggleModal = useCallback(() => {
