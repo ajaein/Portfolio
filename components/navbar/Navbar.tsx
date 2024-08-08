@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
+import styles from "./navbar.module.scss";
 
 const navName = {
   about: "About Me",
@@ -31,24 +32,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className={fix ? "nav__container__fixed" : "nav__container"}>
-      <div className="nav__wrapper">
-        <div className="nav__left">
-          <div className="nav__name" onClick={() => scrollTo(0, 0)}>
+    <nav className={styles.navSticky}>
+      <div className={fix ? styles.navContainerFixed : styles.navContainer}>
+        <div className={styles.navWrapper}>
+          <div className={styles.navName} onClick={() => scrollTo(0, 0)}>
             Portfolio
           </div>
-        </div>
-        <div className="nav__right">
-          <div className="nav__list">
-            <ul className="nav__list-content">
-              <li className="nav__menu" onClick={() => scrollTo(0, 0)}>
+          <div className={styles.navList}>
+            <ul className={styles.navListContent}>
+              <li className={styles.navMenu} onClick={() => scrollTo(0, 0)}>
                 Home
               </li>
               {Object.entries(navName).map(([key, value]) => {
                 return (
                   <li key={key}>
                     <Link
-                      className="nav__menu"
+                      className={styles.navMenu}
                       to={key}
                       spy={true}
                       smooth={true}
@@ -63,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

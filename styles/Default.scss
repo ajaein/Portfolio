@@ -163,22 +163,10 @@ button {
   cursor: pointer;
 } /*# sourceMappingURL=Default.css.map */
 
-.container__default {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1130px;
+.mouse-event {
+  z-index: 9999;
 }
 
-.title-padding {
-  padding-bottom: 30px;
-  font-weight: 700;
-  font-size: 32px;
-}
-
-@import "./App.scss";
-@import "./Canvas.scss";
-@import "./Navbar.scss";
-@import "./AboutMe.scss";
 @import "./Skills.scss";
 @import "./Project.scss";
 @import "./Footer.scss";

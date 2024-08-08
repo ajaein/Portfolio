@@ -1,4 +1,4 @@
-.nav-sticky {
+.navSticky {
   position: fixed;
   width: 100%;
   top: 0px;
@@ -15,18 +15,18 @@
   background-color: transparent;
 }
 
-.nav__container {
+.navContainer {
   border-bottom: 0px solid white;
-  @include backdropfilter()
+  @include backdropfilter();
 }
 
-.nav__container__fixed {
+.navContainerFixed {
   padding: 5px 0;
   border-bottom: 0.5px solid grey;
-  @include backdropfilter()
+  @include backdropfilter();
 }
 
-.nav__wrapper {
+.navWrapper {
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -36,23 +36,23 @@
   max-width: 1130px;
 }
 
-.nav__list {
+.navList {
   display: flex;
 }
 
-.nav__name {
+.navName {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
 }
 
-.nav__list-content {
+.navListContent {
   display: flex;
   flex-direction: row;
   // gap: 1.5rem;
 }
 
-.nav__menu {
+.navMenu {
   cursor: pointer;
   padding-left: 20px;
   transition: 0.2s;
@@ -65,23 +65,24 @@
 }
 
 @media (max-width: 1200px) {
-  .nav__wrapper {
+  .navWrapper {
     margin: auto;
     padding: 0 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-sticky {
+  .navSticky {
     position: sticky;
+    width: 100%;
   }
 }
 
 @media (max-width: 412px) {
-  .nav__name {
+  .navName {
     font-size: 15px;
   }
-  .nav__menu {
+  .navMenu {
     font-size: 15px;
   }
 }

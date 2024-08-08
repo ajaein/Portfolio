@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MenuItem } from "./ProjectMenu";
+import commonStyles from '@/styles/common.module.scss'
 
 interface ProjectProps {
   onModal: () => void;
@@ -14,7 +15,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <section className="project-container">
-      <div className="project-wrapper container__default">
+      <div className={`project-wrapper ${commonStyles.containerDefault}`}>
         <div className="project__title">
           <div className="project__title-name">Project</div>
         </div>

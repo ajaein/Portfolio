@@ -3,14 +3,11 @@ import AboutMe from "../components/about-me/AboutMe";
 import Canvas from "../components/canvas/Canvas";
 import Footer from "../components/Footer";
 import Translator from "../components/Others";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import Project from "../components/my-project/Project";
 import Skills from "../components/Skills";
 import ProjectAco from "../components/ProjectAco";
 import MyPortfolio from "../components/MyPortfolio";
-import MyBlog from "../components/MyBlog";
-import Career from "../components/Others";
-import Decommi from "../components/decommi";
 import { useModalToggle } from "../hooks";
 
 const Home = () => {
@@ -41,12 +38,10 @@ const Home = () => {
         <MyPortfolio onModal={onPortfolioModalToggle} />
       </div>
       <main className="main">
-        <nav className="nav-sticky">
-          <Navbar />
-        </nav>
-        <section ref={canvasRef} className="section-00">
+        <Navbar />
+        <div ref={canvasRef}>
           <Canvas />
-        </section>
+        </div>
         <section id="about">
           <AboutMe canvas={canvas} />
         </section>

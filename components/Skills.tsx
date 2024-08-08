@@ -8,6 +8,7 @@ import nestjs from "../public/nestjs.svg";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import commonStyles from '@/styles/common.module.scss'
 
 const Skills = () => {
   /*
@@ -59,7 +60,7 @@ const Skills = () => {
 
   return (
     <section className="skill-container">
-      <div className="skill__wrapper container__default">
+      <div className={`skill__wrapper ${commonStyles.containerDefault}`}>
         <div className="skill__content">
           <div>
             <div className="skill__animation">
