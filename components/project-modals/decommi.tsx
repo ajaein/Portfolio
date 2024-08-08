@@ -4,8 +4,8 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { decommiSlide } from "../lib";
-import { ImageSlide } from "./swiper-slide";
+import { decommiSlide } from "../../lib/configs";
+import { ImageSlide } from "../swiper-slide";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -27,18 +27,18 @@ const Decommi = ({ onModal }: props) => {
       <div className="portfolio__container">
         <div className="portfolio__wrapper">
           <ImageSlide
-            className="portfolio__img-01"
+            className="swiperImg"
             slide={decommiSlide}
           />
           <div className="portfolio__content">
             <div className="portfolio__content-info">
-              <p className="portfolio__content-info-name">
+              <p className="contentInfoName">
                 Decommi - SNS 프라이버시 다이어리
               </p>
-              <p className="portfolio__content-info-days">
+              <p className="contentInfoDays">
                 2022.08~2022.10 · 4인 팀 프로젝트
               </p>
-              <div className="portfolio__content-info-days">
+              <div className="contentInfoDays">
                 <span className="portfolio__content-info-tools">
                   Vue &nbsp;|&nbsp; Vuex &nbsp;|&nbsp; Bootstrap5 &nbsp;|&nbsp;
                   Sass
@@ -48,11 +48,11 @@ const Decommi = ({ onModal }: props) => {
                   MariaDB{" "}
                 </span>
               </div>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>주요 기능:</span> 사용자 및 게시판, 댓글 CRUD, 선호
                 태그리스트, 북마크, 신고, 검색, 관리자페이지
               </p>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>담당 파트: </span>
                 관리자 페이지의 일부를 제외한 프론트엔드 전체를 담당 (주요기능
                 전부)
@@ -71,8 +71,8 @@ const Decommi = ({ onModal }: props) => {
                 <br />- Figma를 사용한 전체 디자인
               </p>
             </div>
-            <div className="portfolio__content-ex">
-              <p className="portfolio__content-ex-text">
+            <div className="contentEx">
+              <p className="contentExText">
                 <span>
                   인터넷의 발달로 SNS에 올리는 개인의 사생활이 모두의 사생활처럼
                   공개되는 것에 피로감을 느끼는 사람들을 위한 다이어리를
@@ -91,7 +91,7 @@ const Decommi = ({ onModal }: props) => {
                 이렇게 된 거 Bootstrap의 사용법도 같이 익혀보자는 마인드로 일부
                 컴포넌트를 Bootstrap의 인라인 스타일로 만들었습니다.
               </p>
-              <p className="portfolio__content-ex-text">
+              <p className="contentExText">
                 처음으로 웹을 만들어보면서 HTML, CSS, Javascript 등 프론트엔드의
                 기본이 되는 언어와 웹 개발의 기본 지식을 쌓을 수 있었습니다.
                 Vue를 사용하는 과정에서 Javascript 지식의 부재로 많은 어려움을
@@ -122,14 +122,14 @@ const Decommi = ({ onModal }: props) => {
                 프론트파트를 끝까지 만들어냈다는 점에서 많은 성장을 이룰 수
                 있었던 프로젝트입니다.
               </p>
-              <p className="portfolio__content-ex-text"></p>
+              <p className="contentExText"></p>
             </div>
           </div>
           <div className="portfolio__bottom">
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <b>팀원 Github</b>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>이태일 (Frontend): &nbsp;</span>
               <a
                 href="https://github.com/k1k2brz"
@@ -139,7 +139,7 @@ const Decommi = ({ onModal }: props) => {
                 https://github.com/k1k2brz
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>김형준 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/PorkbellyBigfan"
@@ -149,7 +149,7 @@ const Decommi = ({ onModal }: props) => {
                 https://github.com/PorkbellyBigfan
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>박상민 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/psm418"
@@ -159,7 +159,7 @@ const Decommi = ({ onModal }: props) => {
                 https://github.com/psm418
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>이준호 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/ZOONo-lee"
@@ -170,17 +170,7 @@ const Decommi = ({ onModal }: props) => {
               </a>
             </div>
             <br />
-            {/* <div className="portfolio__bottom-links">
-                            <span>프로젝트 Github: &nbsp;</span>
-                            <a href="https://github.com/k1k2brz/Decommi-pre"
-                                target="_blank" rel="noreferrer noopener">&nbsp;&nbsp;https://github.com/k1k2brz/Decommi-pre</a>
-                        </div>
-                        <div className="portfolio__bottom-links">
-                            <span>프로젝트 Notion: &nbsp;</span>
-                            <a href="https://decommi.notion.site/Decommi-54b1b7830f8545199a9f7c912e01f4bb"
-                                target="_blank" rel="noreferrer noopener">&nbsp;&nbsp;https://decommi.notion.site/Decommi-54b1b7830f8545199a9f7c912e01f4bb</a>
-                        </div> */}
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 25 }}>
                 <b>Install JavaScript Packages</b>
               </div>

@@ -36,7 +36,7 @@ function ProjectAco({ onModal }: props) {
             >
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco01.PNG"
                   alt="aco-01"
                   width="800"
@@ -45,7 +45,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco02.PNG"
                   alt="aco-02"
                   width="800"
@@ -54,7 +54,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco03.PNG"
                   alt="aco-03"
                   width="800"
@@ -63,7 +63,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco05.PNG"
                   alt="aco-05"
                   width="800"
@@ -72,7 +72,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco06.PNG"
                   alt="aco-06"
                   width="800"
@@ -81,7 +81,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco04.PNG"
                   alt="aco-04"
                   width="800"
@@ -90,7 +90,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco07.PNG"
                   alt="aco-07"
                   width="800"
@@ -99,7 +99,7 @@ function ProjectAco({ onModal }: props) {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/aco08.PNG"
                   alt="aco-08"
                   width="800"
@@ -110,10 +110,10 @@ function ProjectAco({ onModal }: props) {
           </div>
           <div className="portfolio__content">
             <div className="portfolio__content-info">
-              <p className="portfolio__content-info-name">
+              <p className="contentInfoName">
                 ACO - Advance the Ecology
               </p>
-              <p className="portfolio__content-info-days">
+              <p className="contentInfoDays">
                 2022.12 ~ 2023.01 · 팀 프로젝트
               </p>
               <span className="portfolio__content-info-tools">
@@ -128,11 +128,11 @@ function ProjectAco({ onModal }: props) {
               <span className="portfolio__content-info-tools">
                 AWS Lightsail
               </span>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>주요 기능:</span> 사용자 및 게시판, 채팅, 댓글 CRUD, 태그,
                 좋아요, 신고, 검색, 관리자페이지, 이미지 첨부
               </p>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>담당 파트: </span>
                 회원가입과 신고를 제외한 프론트엔드 전체 담당(위의 주요 기능
                 전부) 및 백엔드 비밀번호 수정 및 좋아요 기능 담당
@@ -155,8 +155,8 @@ function ProjectAco({ onModal }: props) {
                 AWS Lightsail을 사용한 프론트엔드 파트 배포
               </p>
             </div>
-            <div className="portfolio__content-ex">
-              <p className="portfolio__content-ex-text">
+            <div className="contentEx">
+              <p className="contentExText">
                 <span>
                   ACO는 환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거
                   방법부터 친환경 Tip이나 제로 웨이스트, 미니멀 라이프 등 나의
@@ -229,14 +229,14 @@ function ProjectAco({ onModal }: props) {
             </div>
           </div>
           <div className="portfolio__bottom">
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 10 }}>
                 <b>홈페이지</b>
               </div>
               {/* <a href="http://43.200.152.148:3075/"
                                 target="_blank" rel="noreferrer noopener">ACO 홈페이지 바로가기</a>
                             <br /> */}
-              <div className="portfolio__bottom-solve">
+              <div className="portfolioBottomSolve">
                 <b>문제해결 및 메모</b>
               </div>
               <a
@@ -288,7 +288,7 @@ function ProjectAco({ onModal }: props) {
                 Memory사용
               </a>
             </div>
-            {/* <div className="portfolio__bottom-links">
+            {/* <div className="portfolioBottomLinks">
                             <div style={{ marginTop: 10 }}>
                                 <b>프로젝트 Github</b>
                             </div>
@@ -303,7 +303,7 @@ function ProjectAco({ onModal }: props) {
             <div style={{ marginTop: 10 }}>
               <b>팀원 Github</b>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>이태일 (Frontend): &nbsp;</span>
               <a
                 href="https://github.com/k1k2brz"
@@ -313,7 +313,7 @@ function ProjectAco({ onModal }: props) {
                 https://github.com/k1k2brz
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>김형준 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/PorkbellyBigfan"
@@ -323,7 +323,7 @@ function ProjectAco({ onModal }: props) {
                 https://github.com/PorkbellyBigfan
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>변현석 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/B-HS"
@@ -333,7 +333,7 @@ function ProjectAco({ onModal }: props) {
                 https://github.com/B-HS
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 25 }}>
                 <b>Install JavaScript Packages</b>
               </div>

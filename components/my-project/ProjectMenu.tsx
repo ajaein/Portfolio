@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from './project.module.scss'
 
 interface MenuItemProps {
   onClick: () => void;
@@ -20,21 +21,21 @@ export const MenuItem = ({
   const repeatedText = Array(marqueeNumber).fill(marqueeText).join(" - ");
 
   return (
-    <div className="menu__item">
-      <button className="project__menu__item-link" onClick={onClick}>
+    <div className={styles.menuItem}>
+      <button className={styles.projectMenuItemLink} onClick={onClick}>
         {title}
       </button>
-      <div className="menu__item-img">
+      <div className={styles.menuItemImg}>
         <Image
-          className="menu__item-img-border"
+          className={styles.menuItemImgBorder}
           src={src}
           alt={alt}
           width="800"
           height="500"
         />
       </div>
-      <div className="marquee">
-        <div className="marquee__inner">
+      <div className={styles.marquee}>
+        <div className={styles.marqueeInner}>
           <span>{repeatedText}</span>
         </div>
       </div>

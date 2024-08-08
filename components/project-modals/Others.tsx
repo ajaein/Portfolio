@@ -4,7 +4,7 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import type { ModalProps } from "../types";
+import type { ModalProps } from "../../types";
 
 const Translator = ({ onModal }: ModalProps) => {
   return (
@@ -30,7 +30,7 @@ const Translator = ({ onModal }: ModalProps) => {
             >
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/gpttranslator.PNG"
                   alt="gpt-01"
                   width="800"
@@ -39,7 +39,7 @@ const Translator = ({ onModal }: ModalProps) => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="portfolio__img-01"
+                  className="swiperImg"
                   src="/porfolio_img/gpttranslator02.PNG"
                   alt="gpt-02"
                   width="800"
@@ -59,17 +59,17 @@ const Translator = ({ onModal }: ModalProps) => {
           </div>
           <div className="portfolio__content">
             <div className="portfolio__content-info">
-              <p className="portfolio__content-info-name">
+              <p className="contentInfoName">
                 Spring Board (CRUD)
               </p>
-              <p className="portfolio__content-info-days">
+              <p className="contentInfoDays">
                 2023.06 · 개인 프로젝트
               </p>
               <span className="portfolio__content-info-tools">
                 Javascript &nbsp;|&nbsp; JQuery &nbsp;|&nbsp; Java &nbsp;|&nbsp;
                 Spring &nbsp;|&nbsp; PostgreSQL
               </span>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>주요 기능:</span>
                 <br />
                 - 기본적인 게시판 CRUD
@@ -82,8 +82,8 @@ const Translator = ({ onModal }: ModalProps) => {
                 <br />- 비밀번호 체크
               </p>
             </div>
-            <div className="portfolio__content-ex">
-              <p className="portfolio__content-ex-text">
+            <div className="contentEx">
+              <p className="contentExText">
                 <span>
                   Spring의 기본 기능을 학습하기 위해 JSP를 사용한 CRUD를
                   만들었습니다.
@@ -106,15 +106,15 @@ const Translator = ({ onModal }: ModalProps) => {
             </div>
           </div>
           <div className="portfolio__bottom">
-            {/* <div className="portfolio__bottom-links">
-                            <div className='portfolio__bottom-solve'>
+            {/* <div className="portfolioBottomLinks">
+                            <div className='portfolioBottomSolve'>
                                 <b>문제해결 및 메모</b>
                             </div>
                             <a href="https://wonderfulwonder.tistory.com/81"
                                 target="_blank" rel="noreferrer noopener">준비중</a>
                             <br />
                         </div> */}
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 10 }}>
                 <b>프로젝트 Github</b>
               </div>
@@ -126,7 +126,7 @@ const Translator = ({ onModal }: ModalProps) => {
                 https://github.com/k1k2brz/Board
               </a>
               <br />
-              <div className="portfolio__bottom-links">
+              <div className="portfolioBottomLinks">
                 <div style={{ marginTop: 25 }}>
                   <b>Run Eclipse Tomcat Server</b>
                 </div>
@@ -136,14 +136,14 @@ const Translator = ({ onModal }: ModalProps) => {
           </div>
           <div className="portfolio__content">
             <div className="portfolio__content-info">
-              <p className="portfolio__content-info-name">chatGPT Translator</p>
-              <p className="portfolio__content-info-days">
+              <p className="contentInfoName">chatGPT Translator</p>
+              <p className="contentInfoDays">
                 2023.04 · 팀 프로젝트
               </p>
               <span className="portfolio__content-info-tools">
                 Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django
               </span>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>주요 기능:</span>
                 <br />
                 - chatGPT API를 사용한 번역 (10개 언어)
@@ -151,7 +151,7 @@ const Translator = ({ onModal }: ModalProps) => {
                 - History API를 사용한 이전 번역 저장
                 <br />- 사용자가 on/off를 설정할 수 있는 다크 모드
               </p>
-              <p className="portfolio__content-info-days small">
+              <p className="contentInfoDays small">
                 <span>담당 파트: </span>
                 프론트엔드 담당
                 <br />
@@ -165,8 +165,8 @@ const Translator = ({ onModal }: ModalProps) => {
                 <br />
               </p>
             </div>
-            <div className="portfolio__content-ex">
-              <p className="portfolio__content-ex-text">
+            <div className="contentEx">
+              <p className="contentExText">
                 <span>
                   OpenAI에서 공개된 GPT의 API를 사용해 만든 번역기
                   프로젝트입니다. chatGPT를 사용해 본 적 없는 사람들도 쉽게
@@ -192,8 +192,8 @@ const Translator = ({ onModal }: ModalProps) => {
             </div>
           </div>
           <div className="portfolio__bottom">
-            <div className="portfolio__bottom-links">
-              <div className="portfolio__bottom-solve">
+            <div className="portfolioBottomLinks">
+              <div className="portfolioBottomSolve">
                 <b>문제해결 및 메모</b>
               </div>
               <a
@@ -205,7 +205,7 @@ const Translator = ({ onModal }: ModalProps) => {
               </a>
               <br />
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 10 }}>
                 <b>프로젝트 Github</b>
               </div>
@@ -218,10 +218,10 @@ const Translator = ({ onModal }: ModalProps) => {
               </a>
               <br />
             </div>
-            <div className="portfolio__bottom-links" style={{ marginTop: 10 }}>
+            <div className="portfolioBottomLinks" style={{ marginTop: 10 }}>
               <b>팀원 Github</b>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>이태일 (Frontend): &nbsp;</span>
               <a
                 href="https://github.com/k1k2brz"
@@ -231,7 +231,7 @@ const Translator = ({ onModal }: ModalProps) => {
                 https://github.com/k1k2brz
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <span>홍승식 (Backend): &nbsp;</span>
               <a
                 href="https://github.com/hkp1030"
@@ -241,7 +241,7 @@ const Translator = ({ onModal }: ModalProps) => {
                 https://github.com/hkp1030
               </a>
             </div>
-            <div className="portfolio__bottom-links">
+            <div className="portfolioBottomLinks">
               <div style={{ marginTop: 25 }}>
                 <b>Install Django and Python Packages</b>
               </div>

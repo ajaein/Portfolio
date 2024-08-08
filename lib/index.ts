@@ -1,1 +1,0 @@
-export { decommiSlide, portfolioSlide } from './swiper-config'

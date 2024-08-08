@@ -1,3 +1,5 @@
+@import '../../styles/Variable.scss';
+
 .portfolio {
   position: relative;
   line-height: 1.5;
@@ -13,31 +15,31 @@
   color: white;
 }
 
-.fixed .bi-x {
-  color: white
+.bi {
+  color: white;
 }
 
-.portfolio__header {
+.portfolioHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
 }
 
-.portfolio__header,
-.portfolio__wrapper {
+.portfolioHeader,
+.portfolioWrapper {
   margin: 0 50px;
 }
 
-.portfolio__container {
+.portfolioContainer {
   margin-top: 30px;
 }
 
-.portfolio__icon {
+.portfolioIcon {
   font-size: 30px;
 }
 
-.portfolio__img {
+.swiperImgWrapper {
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -66,7 +68,7 @@
   background-color: #e78ea5 !important;
 }
 
-.portfolio__content-info {
+.portfolioContentInfo {
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -107,17 +109,21 @@
   font-size: 13px;
 }
 
-.portfolioBottom {
+.portfolio__bottom {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
 }
 
 .portfolioBottomLinks {
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
 }
 .portfolioBottomSolve {
-  margin: 10px 0 3px 0;
+  margin-right: 10px;
+}
+.links {
+  flex-direction: column;
 }
 
 .portfolioBottomLinks > p {
@@ -141,7 +147,7 @@
 }
 
 @media (max-width: 780px) {
-  .portfolio__wrapper {
+  .portfolioWrapper {
     display: flex;
     flex-direction: column;
   }
