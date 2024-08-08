@@ -1,2 +1,2 @@
-export { decommiSlide, portfolioSlide } from './swiper-config'
-export { myPortfolioLink } from './link'
+export { decommiSlide, portfolioSlide, acoSlide } from './swiper-config'
+export { myPortfolioLink, acoLink } from './link'

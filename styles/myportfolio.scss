@@ -14,7 +14,7 @@
 }
 
 .fixed .bi-x {
-  color: white
+  color: white;
 }
 
 .portfolio__header {
@@ -53,17 +53,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #e78ea5 !important;
 }
 
 .portfolio__content-info {
@@ -110,7 +99,7 @@
 .portfolioBottom {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .portfolioBottomLinks {

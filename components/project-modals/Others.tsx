@@ -65,7 +65,7 @@ const Translator = ({ onModal }: ModalProps) => {
               <p className="contentInfoDays">
                 2023.06 · 개인 프로젝트
               </p>
-              <span className="portfolio__content-info-tools">
+              <span className="contentInfoTools">
                 Javascript &nbsp;|&nbsp; JQuery &nbsp;|&nbsp; Java &nbsp;|&nbsp;
                 Spring &nbsp;|&nbsp; PostgreSQL
               </span>
@@ -140,7 +140,7 @@ const Translator = ({ onModal }: ModalProps) => {
               <p className="contentInfoDays">
                 2023.04 · 팀 프로젝트
               </p>
-              <span className="portfolio__content-info-tools">
+              <span className="contentInfoTools">
                 Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django
               </span>
               <p className="contentInfoDays small">

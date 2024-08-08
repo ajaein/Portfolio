@@ -1,4 +1,4 @@
-@import '../../styles/Variable.scss';
+@import "../../styles/Variable.scss";
 
 .portfolio {
   position: relative;
@@ -93,6 +93,10 @@
   }
 }
 
+.contentEx {
+  padding-top: 30px;
+}
+
 .contentExText {
   padding-bottom: 30px;
 }
@@ -109,10 +113,11 @@
   font-size: 13px;
 }
 
-.portfolio__bottom {
+.portfolioBottom {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  gap: 5px;
 }
 
 .portfolioBottomLinks {
@@ -124,6 +129,7 @@
 }
 .links {
   flex-direction: column;
+  gap: 3px;
 }
 
 .portfolioBottomLinks > p {
@@ -144,6 +150,16 @@
 
 .portfolioBottomLinks > span {
   font-weight: 400;
+}
+
+.portfolioContentInfoTools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.toolItem {
+  font-size: 14px;
 }
 
 @media (max-width: 780px) {

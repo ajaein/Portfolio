@@ -167,6 +167,17 @@ button {
   z-index: 9999;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e78ea5 !important;
+}
+
 @import "./Skills.scss";
 @import "./Footer.scss";
 @import "./myportfolio.scss";

@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { type ModalProps } from "@/types";
-import styles from '@/components/project-modals/project-modals.module.scss'
-import commonStyles from '@/styles/common.module.scss'
+import styles from "@/components/project-modals/project-modals.module.scss";
+import commonStyles from "@/styles/common.module.scss";
 
 interface WrapperProps extends ModalProps {
   children: ReactNode;
