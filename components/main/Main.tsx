@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import AboutMe from "@/components/about-me/AboutMe";
 import Canvas from "@/components/canvas/Canvas";
-import Footer from "@/components/Footer";
+
 import Translator from "@/components/project-modals/Others";
-import Navbar from "@/components/navbar/Navbar";
+import { Footer, Navbar } from "@/components/layout";
 import Project from "@/components/my-project/Project";
-import Skills from "@/components/Skills";
+import Skills from "@/components/skill/Skills";
 import ProjectAco from "@/components/project-modals/ProjectAco";
 import MyPortfolio from "@/components/project-modals/MyPortfolio";
 import { useModalToggle } from "@/hooks";
 import commonStyles from "@/styles/common.module.scss";
+
 
 const Main = () => {
   const [canvas, setCanvas] = useState<number>();

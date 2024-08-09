@@ -178,7 +178,30 @@ button {
   background-color: #e78ea5 !important;
 }
 
-@import "./Skills.scss";
-@import "./Footer.scss";
-@import "./myportfolio.scss";
+// Skills Animation
+@mixin anime-default {
+  background: linear-gradient(
+    to right,
+    rgb(56, 56, 56) 50%,
+    rgb(226, 226, 226) 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.skillTitle1 {
+  @include anime-default;
+}
+
+.skillTitle2,
+.skillTitle3,
+.skillTitle4 {
+  margin-top: 40px;
+  @include anime-default;
+}
+
+
 @import "./Variable.scss";

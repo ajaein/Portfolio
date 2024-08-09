@@ -57,17 +57,6 @@
   justify-content: center;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #e78ea5 !important;
-}
-
 .portfolioContentInfo {
   padding-bottom: 30px;
   display: flex;
@@ -107,10 +96,6 @@
 
 .contentEx-write {
   margin-top: 15px;
-}
-
-.portfolio__content-skill {
-  font-size: 13px;
 }
 
 .portfolioBottom {

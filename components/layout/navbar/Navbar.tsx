@@ -8,7 +8,7 @@ const navName = {
   project: "Project",
 };
 
-const Navbar = () => {
+export const Navbar = () => {
   const [fix, setFix] = useState<boolean>(false);
 
   // Nav 애니메이션
@@ -65,5 +65,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

@@ -6,11 +6,11 @@ import { Career } from "./career/Career";
 import { CareerDetails } from "./career/CareerDetails";
 import styles from "./about.module.scss";
 
-type Props = {
+type AboutMeProps = {
   canvas: number | undefined;
 };
 
-const AboutMe = ({ canvas }: Props) => {
+const AboutMe = ({ canvas }: AboutMeProps) => {
   const [ElementVisible, setElementVisible] = useState<boolean>(false);
   const [amAnime, setAmAnime] = useState<number>(0);
   const myRef = useRef<HTMLDivElement | null>(null);
@@ -19,11 +19,9 @@ const AboutMe = ({ canvas }: Props) => {
     // 컨텐츠 Opacity조정을 위함
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      // console.log('entry', entry);
       setElementVisible(entry.isIntersecting);
     });
     observer.observe(myRef.current as HTMLDivElement);
-    // ref를 두개 선언하면 둘 다 인식이 되어 isIntersecting이 꼬인다
   }, []);
 
   /**
