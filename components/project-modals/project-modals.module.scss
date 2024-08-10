@@ -1,0 +1,164 @@
+@import "../../styles/Variable.scss";
+
+.portfolio {
+  position: relative;
+  line-height: 1.5;
+}
+
+.fixed {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1060;
+  background-color: black;
+  color: white;
+}
+
+.bi {
+  color: white;
+}
+
+.portfolioHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.portfolioHeader,
+.portfolioWrapper {
+  margin: 0 50px;
+}
+
+.portfolioContainer {
+  margin-top: 30px;
+}
+
+.portfolioIcon {
+  font-size: 30px;
+}
+
+.swiperImgWrapper {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperImg {
+  width: auto;
+  height: auto;
+}
+
+.portfolio__img-02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioContentInfo {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contentInfoName {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(56, 56, 56);
+  padding-bottom: 10px;
+}
+
+.contentInfoDays {
+  margin-top: 4px;
+}
+
+.contentInfoDays.small {
+  font-size: small;
+  span {
+    font-weight: 600;
+  }
+}
+
+.contentEx {
+  padding-top: 30px;
+}
+
+.contentExText {
+  padding-bottom: 30px;
+}
+
+.contentExText > span {
+  font-weight: 500;
+}
+
+.contentEx-write {
+  margin-top: 15px;
+}
+
+.portfolioBottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+
+.portfolioBottomLinks {
+  display: flex;
+  flex-direction: row;
+}
+.portfolioBottomSolve {
+  margin-right: 10px;
+}
+.links {
+  flex-direction: column;
+  gap: 3px;
+}
+
+.portfolioBottomLinks > p {
+  font-size: 14px;
+}
+
+.portfolioBottomLinks > a {
+  &:link {
+    color: rgb(86, 86, 255);
+  }
+  &:visited {
+    color: rgb(86, 86, 255);
+  }
+  &:hover {
+    color: #e78ea5;
+  }
+}
+
+.portfolioBottomLinks > span {
+  font-weight: 400;
+}
+
+.portfolioContentInfoTools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.toolItem {
+  font-size: 14px;
+}
+
+@media (max-width: 780px) {
+  .contentInfoName {
+    font-size: 28px;
+  }
+
+  .portfolioWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolioBottomLinks {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { MenuItem } from "./ProjectMenu";
+import commonStyles from '@/styles/common.module.scss'
+import styles from './project.module.scss'
 
 interface ProjectProps {
   onModal: () => void;
@@ -13,12 +14,12 @@ const Project = ({
   onPortfolioModal,
 }: ProjectProps) => {
   return (
-    <section className="project-container">
-      <div className="project-wrapper container__default">
-        <div className="project__title">
-          <div className="project__title-name">Project</div>
+    <section className={styles.projectContainer}>
+      <div className={`${styles.projectWrapper} ${commonStyles.containerDefault}`}>
+        <div className={styles.projectTitle}>
+          <div className={styles.projectTitleName}>Project</div>
         </div>
-        <div className="menu">
+        <div className={styles.menu}>
           <MenuItem
             onClick={onAcoModal}
             title="A.C.O"
@@ -37,8 +38,8 @@ const Project = ({
           <MenuItem
             onClick={onModal}
             title="Others"
-            src="/porfolio_img/gpttranslator.PNG"
-            alt="gpt-01"
+            src="/porfolio_img/springcrud.PNG"
+            alt="others-01"
             marqueeText="Others - 000"
           />
         </div>

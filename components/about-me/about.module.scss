@@ -1,9 +1,11 @@
-.am-container {
+@import '../../styles/Variable.scss';
+
+.amContainer {
   height: 100%;
   line-height: 1.7;
 }
 
-.am-area {
+.amArea {
   height: 100%;
   width: 100%;
   display: flex;
@@ -11,20 +13,21 @@
   align-items: center;
 }
 
-.am-wrapper {
+.amWrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.am-content {
+.amContent {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.am-about {
+.amAbout {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +37,7 @@
   position: relative;
 }
 
-.am-aboutme {
+.amTitleText {
   position: absolute;
   width: 100%;
   font-size: 7.5em;
@@ -55,58 +58,71 @@
   margin-right: 20px;
 }
 
-.am-infos {
+.amDetailCenter {
+  display: flex;
+}
+
+.amInfo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.am-infos-two {
+.amInfos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.am-stroke {
+.amStroke {
   width: 0.5px;
   height: 100px;
 }
 
-.am-infos-icontext {
+.amInfoIcontext {
   display: flex;
   align-items: center;
   line-break: auto;
 }
 
-.am-infos-edu {
+.amInfo-edu {
   display: flex;
   align-items: center;
 }
 
-.am-education {
+.amEducation {
   display: flex;
   flex-direction: column;
 }
 
-.am-career {
+.amCarrerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.amCarrer {
   margin-top: 30px;
   display: flex;
   align-items: center;
 }
 
-.am-career-detail {
-  margin-top: 5px;
+.amCareerDetail {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   font-size: 14px;
 }
 
-.am-career__date {
-  margin-left: 10px;
+.careerDetailUl {
+  display: flex;
+  flex-direction: column;
+}
+
+.amCarrerDate {
   font-size: 13px;
-  color: rgb(147, 147, 147)
+  color: rgb(147, 147, 147);
 }
 
 @keyframes fadeIn {
@@ -130,85 +146,89 @@
   }
 }
 
-.elem-visible {
+.amVisible {
   animation-name: fadeIn;
   animation-duration: 0.4s;
   animation-timing-function: linear;
 }
 
-.elem-invisible {
+.amInvisible {
   animation-name: fadeOut;
   animation-duration: 0.4s;
   opacity: 0%;
 }
 
-.subtitle-text {
+.subtitleText {
   font-size: 30px;
   font-weight: 500;
 }
-
-// .am-infos-icontext:nth-child(1) > .iconsize > .subtitle-text {
-//   font-size: 34px;
-// }
 
 .none {
   display: none;
 }
 
 @media (max-height: 800px) {
-  .am-container {
+  .amContainer {
     height: 100vh;
   }
 }
 
 @media (max-width: 1200px) {
-  .am-aboutme {
+  .amTitleText {
     left: 6%;
   }
 }
 
 @media (max-width: 890px) {
-  .am-wrapper {
+  .amWrapper {
     margin: auto;
     padding: 0 30px;
   }
-  
-  .am-aboutme {
+
+  .amTitleText {
     font-size: 6em;
     top: -1.5em;
     left: 15%;
   }
-  .am-about {
+  .amAbout {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
 
-  .am-stroke {
+  .amStroke {
+    background-color: $black-color;
     margin: 5px 0;
     height: 0.5px;
     height: 20px;
   }
 
-  .am-infos {
+  .amInfo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
   }
 
-  .am-infos-two {
+  .amInfos {
     gap: 10px;
+    align-items: center;
+  }
+
+  .careerDetailUl {
+    align-items: center;
+    text-align: center;
   }
 }
 
-
 @media (max-width: 412px) {
-  .am-infos {
+  .amInfo {
     font-size: 16px;
   }
-  .am-infos-two {
+  .amInfos {
     font-size: 15px;
   }
 }

@@ -1,9 +1,9 @@
-.project-container {
+.projectContainer {
   height: 100vh;
   display: flex;
 }
 
-.project-wrapper {
+.projectWrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,11 +11,11 @@
   justify-content: center;
 }
 
-.project__title {
+.projectTitle {
   position: relative;
 }
 
-.project__title-name {
+.projectTitleName {
   position: absolute;
   width: 100%;
   font-size: 7.5em;
@@ -27,13 +27,12 @@
   white-space: nowrap;
 }
 
-.menu__item {
+.menuItem {
   position: relative;
 }
 
-.project__menu__item-link {
+.projectMenuItemLink {
   font-weight: 700;
-  // display: inline;
   position: relative;
   transition: opacity 0.4s;
   color: rgb(48, 48, 48);
@@ -52,11 +51,11 @@
   }
 }
 
-.menu__item-img-border {
+.menuItemImgBorder {
   border: 0.5px solid rgb(56, 56, 56);
 }
 
-.menu__item-img {
+.menuItemImg {
   z-index: 2;
   position: absolute;
   height: 10vh;
@@ -67,7 +66,7 @@
   transform: scale(0);
 }
 
-.project__menu__item-link:hover + .menu__item-img {
+.projectMenuItemLink:hover + .menuItemImg {
   opacity: 1;
   transform: scale(1);
   transition: all 0.4s;
@@ -78,7 +77,6 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  // padding: 0 0 25vh;
   --offset: 20vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
@@ -94,7 +92,7 @@
   pointer-events: none;
 }
 
-.marquee__inner {
+.marqueeInner {
   // max-content와 auto의 하이브리드 모드
   // 가용 너비이 부족하지 않는 경우에는 max-content 키워드처럼 담고 있는 컨텐트의 최대 너비를 엘리먼트의 width 속성값으로 사용합니다.
   // 그러나 가용 너비이 부족하다면 auto 키워드처럼 가용 너비에서 여백(margin)을 제외한 너비를 엘리먼트의 width 속성값으로 사용
@@ -110,13 +108,13 @@
 }
 
 // hover시 bg text
-.project__menu__item-link:hover ~ .marquee .marquee__inner {
+.projectMenuItemLink:hover ~ .marquee .marqueeInner {
   opacity: 1;
   transform: translate(0px);
   transition-duration: 0.4s;
 }
 
-.project__menu__item-link,
+.projectMenuItemLink,
 .marquee span {
   white-space: nowrap;
   font-size: 70px;
@@ -128,11 +126,11 @@
 }
 
 @media (max-width: 1200px) {
-  .project-wrapper {
+  .projectWrapper {
     margin: auto;
     padding: 0 30px;
   }
-  .project__title-name {
+  .projectTitleName {
     font-size: 7em;
     top: 0.9em;
     left: 5em;
@@ -140,7 +138,7 @@
   .menu {
     font-size: 80px;
   }
-  .project__menu__item-link,
+  .projectMenuItemLink,
   .marquee span {
     white-space: nowrap;
     font-size: 70px;
@@ -148,7 +146,7 @@
 }
 
 @media (max-width: 980px) {
-  .project__title-name {
+  .projectTitleName {
     font-size: 5em;
     top: 1.2em;
     left: 6em;
@@ -156,12 +154,12 @@
   .menu {
     font-size: 60px;
   }
-  .project__menu__item-link,
+  .projectMenuItemLink,
   .marquee span {
     font-size: 60px;
     line-height: 1.1;
   }
-  .menu__item-img {
+  .menuItemImg {
     height: 12vh;
     max-height: 600px;
     opacity: 0;
@@ -171,19 +169,18 @@
   }
 }
 @media (max-width: 780px) {
-  .project__title {
+  .projectTitle {
     top: -24%;
     left: -20em;
   }
-  .project__title-name {
+  .projectTitleName {
     font-size: 5em;
-    // top: 1.2em;
     left: 4em;
   }
 }
 
 @media (max-width: 412px) {
-  .project__menu__item-link {
+  .projectMenuItemLink {
     font-size: 50px;
   }
 }

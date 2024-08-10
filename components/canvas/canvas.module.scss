@@ -1,17 +1,19 @@
-.cav-container {
+@import '../../styles/Variable.scss';
+
+.cavContainer {
   position: relative;
   z-index: 0;
   height: 100vh;
 }
 
-.cav__wrapper {
+.cavWrapper {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.cav__content {
+.cavContent {
   display: flex;
   flex-direction: column;
   font-size: 40px;
@@ -21,50 +23,50 @@
   color: #2e2e2e;
 }
 
-.cav__bold {
+.cavBold {
   font-weight: 700;
 }
 
-.cav__img-container {
+.cavImgContainer {
   width: 265px;
   height: 265px;
   background-color: grey;
 }
 
-.cav__photo {
+.cavPhoto {
   height: 100%;
   width: 265px;
   object-fit: cover;
-  filter: grayscale(100%)
-
+  filter: grayscale(100%);
 }
 
 @media (max-width: 1200px) {
-  .cav__wrapper {
+  .cavWrapper {
     padding: 0 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .cav__wrapper {
+  .cavWrapper {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .cav__img-container {
+  .cavImgContainer {
     margin-bottom: 30px;
   }
-  .cav__content {
+  .cavContent {
+    color: $black-color;
     margin: 0 30px;
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
   }
-  .cav__p {
+  .cavText {
     word-break: keep-all;
   }
 }
 
-@import "./Variable";
+@import "../../styles/Variable";

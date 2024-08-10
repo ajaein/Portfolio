@@ -1,3 +1,5 @@
+import styles from './about.module.scss'
+
 interface InfoItemProps {
   iconClass?: string;
   text: string;
@@ -5,14 +7,14 @@ interface InfoItemProps {
 }
 
 export const InfoItem = ({ iconClass, text, type = "single" }: InfoItemProps) => (
-  <div className="am-infos-icontext">
-    <div className="iconsize">
-      <p className={`subtitle-text ${iconClass}`}></p>
+  <div className={styles.amInfoIcontext}>
+    <div className={styles.iconsize}>
+      <div className={`${styles.subtitleText} ${iconClass}`} />
     </div>
     {type === "single" ? (
       <p>{text}</p>
     ) : (
-      <div className="am-education">
+      <div className={styles.amEducation}>
         <p>{text}</p>
       </div>
     )}

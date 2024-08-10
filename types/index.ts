@@ -1,1 +1,1 @@
-export type { ModalProps } from './common-types'
+export type { ModalProps, SwiperSlideType, LinkType } from './common-types'

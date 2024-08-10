@@ -1,10 +1,8 @@
 import { useCallback, useRef, useState } from "react";
 
-export const useModalToggle = (initialState = false) => {
+export const useModalToggle = (initialState: boolean = false) => {
   const [modal, setModal] = useState(initialState);
   const currentScroll = useRef(0);
-
-  console.log(currentScroll.current)
 
   const lockScroll = useCallback(() => {
     currentScroll.current = window.scrollY

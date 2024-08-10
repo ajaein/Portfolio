@@ -5,13 +5,11 @@ html {
   font-family: "SCoreDream";
   font-weight: 300;
   line-height: 1.2;
-  // scroll-behavior: smooth;
 }
 
 body {
   margin-right: auto;
   margin-left: auto;
-  // cursor: none;
   -webkit-font-smoothing: antialiased;
   user-select: none;
   overflow-x: hidden;
@@ -161,26 +159,43 @@ button {
   border: 0;
   background: transparent;
   cursor: pointer;
-} /*# sourceMappingURL=Default.css.map */
-
-.container__default {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1130px;
 }
 
-.title-padding {
-  padding-bottom: 30px;
-  font-weight: 700;
-  font-size: 32px;
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
 }
 
-@import "./App.scss";
-@import "./Canvas.scss";
-@import "./Navbar.scss";
-@import "./AboutMe.scss";
-@import "./Skills.scss";
-@import "./Project.scss";
-@import "./Footer.scss";
-@import "./myportfolio.scss";
+.swiper-pagination-bullet-active {
+  background-color: #e78ea5 !important;
+}
+
+// Skills Animation
+@mixin anime-default {
+  background: linear-gradient(
+    to right,
+    rgb(56, 56, 56) 50%,
+    rgb(226, 226, 226) 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.skillTitle1 {
+  @include anime-default;
+}
+
+.skillTitle2,
+.skillTitle3,
+.skillTitle4 {
+  margin-top: 40px;
+  @include anime-default;
+}
+
+
 @import "./Variable.scss";

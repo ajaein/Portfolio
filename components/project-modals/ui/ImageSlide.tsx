@@ -5,6 +5,7 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import styles from '../project-modals.module.scss'
 
 interface ImageSlideProps {
   className?: string;
@@ -23,9 +24,8 @@ export const ImageSlide = ({
   height,
 }: ImageSlideProps) => {
   return (
-    <div className="portfolio__img">
+    <div className={styles.swiperImgWrapper}>
       <Swiper
-        className="portfolio__img-swiper"
         modules={[Navigation, Pagination]}
         spaceBetween={50}
         slidesPerView={1}
@@ -36,7 +36,7 @@ export const ImageSlide = ({
           return (
             <SwiperSlide key={index}>
               <Image
-                className="portfolio__img-01"
+                className={styles.swiperImg}
                 src={slide.src}
                 alt={slide.alt}
                 width="800"

@@ -1,0 +1,100 @@
+.navSticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease-in-out; /* 애니메이션을 부드럽게 전환 */
+}
+
+@mixin backdropfilter {
+  height: 100%;
+  transition: 0.2s;
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  -moz-backdrop-filter: saturate(180%) blur(5px);
+  -o-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  background-color: transparent;
+}
+
+
+.navContainer {
+  border-bottom: 0px solid white;
+  @include backdropfilter();
+}
+
+.navContainerFixed {
+  padding: 5px 0;
+  border-bottom: 0.5px solid grey;
+  @include backdropfilter();
+}
+
+.navWrapper {
+  height: 60px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 좌우로 아이템을 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.navName {
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: auto; /* 왼쪽 끝으로 밀기 */
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 끝으로 밀기 */
+  margin-left: auto; /* 오른쪽 끝으로 밀기 */
+}
+
+.navListContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem; /* 아이템 간 간격 */
+}
+
+.navMenu {
+  cursor: pointer;
+  padding-left: 20px;
+  transition: 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: #e78ea5;
+    transform: translate(0.5%, 0.5%);
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navWrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navSticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navName {
+    font-size: 18px;
+  }
+
+  .navListContent {
+    gap: 1rem; /* 좁은 화면에서는 간격을 줄임 */
+  }
+}
+
+@media (max-width: 480px) {
+  .navName {
+    font-size: 12px;
+  }
+  .navMenu {
+    font-size: 12px;
+  }
+}
