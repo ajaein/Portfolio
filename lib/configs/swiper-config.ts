@@ -100,3 +100,10 @@ export const acoSlide: SwiperSlideType[] = [
     alt: "aco-08",
   },
 ];
+
+export const othersSlide: SwiperSlideType[] = [
+  {
+    src: "/porfolio_img/springcrud.PNG",
+    alt: "others-01",
+  },
+];

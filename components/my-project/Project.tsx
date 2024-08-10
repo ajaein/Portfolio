@@ -38,8 +38,8 @@ const Project = ({
           <MenuItem
             onClick={onModal}
             title="Others"
-            src="/porfolio_img/gpttranslator.PNG"
-            alt="gpt-01"
+            src="/porfolio_img/springcrud.PNG"
+            alt="others-01"
             marqueeText="Others - 000"
           />
         </div>

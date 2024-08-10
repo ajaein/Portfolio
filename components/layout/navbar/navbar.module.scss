@@ -1,8 +1,9 @@
 .navSticky {
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 0;
   z-index: 100;
+  transition: all 0.3s ease-in-out; /* 애니메이션을 부드럽게 전환 */
 }
 
 @mixin backdropfilter {
@@ -14,6 +15,7 @@
   backdrop-filter: saturate(180%) blur(5px);
   background-color: transparent;
 }
+
 
 .navContainer {
   border-bottom: 0px solid white;
@@ -28,28 +30,30 @@
 
 .navWrapper {
   height: 60px;
+  margin: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1130px;
-}
-
-.navList {
-  display: flex;
+  justify-content: space-between; /* 좌우로 아이템을 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
 }
 
 .navName {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
+  margin-right: auto; /* 왼쪽 끝으로 밀기 */
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 끝으로 밀기 */
+  margin-left: auto; /* 오른쪽 끝으로 밀기 */
 }
 
 .navListContent {
   display: flex;
   flex-direction: row;
-  // gap: 1.5rem;
+  gap: 1.5rem; /* 아이템 간 간격 */
 }
 
 .navMenu {
@@ -66,7 +70,6 @@
 
 @media (max-width: 1200px) {
   .navWrapper {
-    margin: auto;
     padding: 0 30px;
   }
 }
@@ -74,15 +77,24 @@
 @media (max-width: 768px) {
   .navSticky {
     position: sticky;
-    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navName {
+    font-size: 18px;
+  }
+
+  .navListContent {
+    gap: 1rem; /* 좁은 화면에서는 간격을 줄임 */
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 480px) {
   .navName {
-    font-size: 15px;
+    font-size: 12px;
   }
   .navMenu {
-    font-size: 15px;
+    font-size: 12px;
   }
 }

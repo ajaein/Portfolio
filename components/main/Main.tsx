@@ -41,7 +41,7 @@ const Main = () => {
       </div>
       <main className="main">
         <Navbar />
-        <div ref={canvasRef}>
+        <div ref={canvasRef} id="home">
           <Canvas />
         </div>
         <section id="about">

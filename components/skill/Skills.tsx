@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import commonStyles from "@/styles/common.module.scss";
@@ -22,7 +22,7 @@ const SkillItem = ({
 }: SkillItemProps) => (
   <div className={styles.skillImg}>
     <div className={styles.skillImgHeight}>
-      <Image src={src} alt={alt} width={width} height={height} />
+      <Image src={src} alt={alt} width={width} height={height} style={{ objectFit: 'contain' }} />
     </div>
     <p className={styles.skillText}>{text}</p>
   </div>
@@ -55,8 +55,6 @@ const SkillSection = ({ title, titleClass, skills }: SkillSectionProps) => {
 };
 
 const Skills = () => {
-  const [isClient, setIsClient] = useState<boolean>(false); // GSAP실행용
-
   /*
    *   Skill 타이틀 애니메이션
    */

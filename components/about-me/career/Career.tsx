@@ -10,7 +10,7 @@ export const Career = ({ children, date }: CareerProps) => {
   return (
     <div className={styles.amCarrer}>
       <div className={styles.iconsize}>
-        <span className={`${styles.subtitleText} bi bi-pc`}></span>
+        <div className={`${styles.subtitleText} bi bi-pc`} />
       </div>
       <div className={styles.amCarrerText}>
         {children}

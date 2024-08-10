@@ -1,6 +1,6 @@
-// .skillContainer {
-//   height: 100vh;
-// }
+.skillContainer {
+  margin-top: 200px;
+}
 
 .skillWrapper {
   height: 100%;
@@ -21,6 +21,8 @@
 
 .skillAbout {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .skillAnimation {
@@ -59,15 +61,23 @@
 
 .skillImgWrapper {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .skillPartition {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .skillMobilePartition {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .skillImg {
@@ -100,12 +110,6 @@
   }
 }
 
-.skillImgWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 @media (max-width: 1200px) {
   .skillWrapper {
     margin: auto;
@@ -113,7 +117,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 890px) {
   .skillTitle {
     font-size: 37px;
   }
@@ -127,6 +131,9 @@
   }
   .skillAnimation {
     display: flex;
+    justify-content: center;
+  }
+  .skillMobilePartition {
     justify-content: center;
   }
 }

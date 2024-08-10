@@ -5,13 +5,11 @@ html {
   font-family: "SCoreDream";
   font-weight: 300;
   line-height: 1.2;
-  // scroll-behavior: smooth;
 }
 
 body {
   margin-right: auto;
   margin-left: auto;
-  // cursor: none;
   -webkit-font-smoothing: antialiased;
   user-select: none;
   overflow-x: hidden;
@@ -161,10 +159,6 @@ button {
   border: 0;
   background: transparent;
   cursor: pointer;
-} /*# sourceMappingURL=Default.css.map */
-
-.mouse-event {
-  z-index: 9999;
 }
 
 .swiper-slide {

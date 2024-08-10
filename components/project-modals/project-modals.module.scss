@@ -148,7 +148,16 @@
 }
 
 @media (max-width: 780px) {
+  .contentInfoName {
+    font-size: 28px;
+  }
+
   .portfolioWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolioBottomLinks {
     display: flex;
     flex-direction: column;
   }

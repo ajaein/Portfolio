@@ -95,40 +95,36 @@ const AboutMe = ({ canvas }: AboutMeProps) => {
                 </p>
               </Career>
               <CareerDetails>
-                <span>
-                  · B2B 오픈마켓 서비스 Buybly <br />
-                  &nbsp; - React 프로젝트
+                <ul className={styles.careerDetailUl}>
+                  <li>
+                    · B2B 오픈마켓 서비스 Buybly
+                  </li>
+                  <li>&nbsp; - 2023.10 ~</li>
+                  <li>&nbsp; - React 프로젝트</li>
+                  <li>&nbsp; - React-hook-form, Zod도입</li>
+                  <li>
+                    &nbsp; - 관리자페이지, 공급자 페이지, 마켓플레이스 UI개발 및
+                    데이터 통합 (회원 관리, 상품 관리, 상품 등록, 상품리스트
+                    표출, 장바구니 등)
+                  </li>
+                  <li>&nbsp; - 고객사 페이지 세팅 및 UI개발, 데이터 통합</li>
+                  <li>&nbsp; - 공통 UI 컴포넌트 제작</li>
+                  <li>&nbsp; - FSD 아키텍쳐 도입</li>
                   <br />
-                  &nbsp; - React-hook-form, Zod도입
-                  <br />
-                  &nbsp; - 관리자페이지, 공급자 페이지, 마켓플레이스 UI개발 및
-                  데이터 통합 (회원 관리, 상품 관리, 상품 등록, 상품리스트 표출,
-                  장바구니 등)
-                  <br />
-                  &nbsp; - 고객사 페이지 세팅 및 UI개발, 데이터 통합
-                  <br />
-                  &nbsp; - 공통 UI 컴포넌트 제작
-                  <br />
-                  &nbsp; - FSD 아키텍쳐 도입
-                  <br />
-                  2024.05 ~
-                  <br />
-                  &nbsp; - Next.js 14로 마이그레이션
-                  <br />
-                  &nbsp; - Recoil을 Zustand로 마이그레이션
-                  <br />
-                  &nbsp; - Styled-components를 TailwindCSS로 마이그레이션
-                  <br />
-                  &nbsp; - Storybook 도입
-                  <br />
-                  &nbsp; - Repository별 UI관리를 위한 Submodule 도입
-                  <br />
-                  &nbsp; - Next-Auth도입
-                  <br />
-                  &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동
-                  (업, 다운로드)
-                  <br />
-                </span>
+                  <li>&nbsp; - 2024.05 ~</li>
+                  <li>&nbsp; - Next.js 14로 마이그레이션</li>
+                  <li>&nbsp; - Recoil을 Zustand로 마이그레이션</li>
+                  <li>
+                    &nbsp; - Styled-components를 TailwindCSS로 마이그레이션
+                  </li>
+                  <li>&nbsp; - Storybook 도입</li>
+                  <li>&nbsp; - Repository별 UI관리를 위한 Submodule 도입</li>
+                  <li>&nbsp; - Next-Auth도입</li>
+                  <li>
+                    &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동
+                    (업, 다운로드)
+                  </li>
+                </ul>
               </CareerDetails>
             </div>
           </div>

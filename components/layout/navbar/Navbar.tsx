@@ -1,8 +1,10 @@
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
+import commonStyles from "../../../styles/common.module.scss";
 import styles from "./navbar.module.scss";
 
 const navName = {
+  home: "Home",
   about: "About Me",
   skill: "Skills",
   project: "Project",
@@ -34,31 +36,30 @@ export const Navbar = () => {
   return (
     <nav className={styles.navSticky}>
       <div className={fix ? styles.navContainerFixed : styles.navContainer}>
-        <div className={styles.navWrapper}>
-          <div className={styles.navName} onClick={() => scrollTo(0, 0)}>
-            Portfolio
-          </div>
-          <div className={styles.navList}>
-            <ul className={styles.navListContent}>
-              <li className={styles.navMenu} onClick={() => scrollTo(0, 0)}>
-                Home
-              </li>
-              {Object.entries(navName).map(([key, value]) => {
-                return (
-                  <li key={key}>
-                    <Link
-                      className={styles.navMenu}
-                      to={key}
-                      spy={true}
-                      smooth={true}
-                      duration={0}
-                    >
-                      <span>{value}</span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+        <div className={commonStyles.containerDefault}>
+          <div className={styles.navWrapper}>
+            <div className={styles.navName} onClick={() => scrollTo(0, 0)}>
+              Portfolio
+            </div>
+            <div className={styles.navList}>
+              <ul className={styles.navListContent}>
+                {Object.entries(navName).map(([key, value]) => {
+                  return (
+                    <li key={key}>
+                      <Link
+                        className={styles.navMenu}
+                        to={key}
+                        spy={true}
+                        smooth={true}
+                        duration={0}
+                      >
+                        <span>{value}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
