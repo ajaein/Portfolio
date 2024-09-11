@@ -22,7 +22,13 @@ const SkillItem = ({
 }: SkillItemProps) => (
   <div className={styles.skillImg}>
     <div className={styles.skillImgHeight}>
-      <Image src={src} alt={alt} width={width} height={height} style={{ objectFit: 'contain' }} />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        style={{ objectFit: "contain" }}
+      />
     </div>
     <p className={styles.skillText}>{text}</p>
   </div>
@@ -92,10 +98,20 @@ const Skills = () => {
     { src: "/JavaScript-logo.png", alt: "JavaScript", text: "Javascript" },
     { src: "/Typescript_logo_2020.svg", alt: "Typescript", text: "Typescript" },
     { src: "/React.png", alt: "React", text: "React" },
-    { src: "/redux.png", alt: "Redux", text: "Redux" },
-    { src: "/Vue.png", alt: "Vue", text: "Vue" },
-    { src: "/vuex.png", alt: "Vuex", text: "Vuex" },
     { src: "/Nextjs-logo.svg", alt: "Next.js", text: "Next.js" },
+    { src: "/zustand.jpg", alt: "Zustand", text: "Zustand" },
+    { src: "/storybook.svg", alt: "Storybook", text: "Storybook" },
+    { src: "/zod.svg", alt: "Zod", text: "Zod" },
+    {
+      src: "/react-hook-form.png",
+      alt: "React-Hook-Form",
+      text: "React-Hook-Form",
+    },
+    {
+      src: "/styled-components.png",
+      alt: "Styled-Components",
+      text: "Styled-Components",
+    },
     { src: "/sass.png", alt: "SASS", text: "SASS" },
     { src: "/bootstrap.png", alt: "Bootstrap", text: "Bootstrap" },
     { src: "/tailwind.png", alt: "TailwindCSS", text: "TailwindCSS" },
@@ -103,7 +119,8 @@ const Skills = () => {
 
   const backendSkills = [
     { src: "/spring.png", alt: "SpringBoot", text: "SpringBoot" },
-    { src: "/postgresql.png", alt: "PostgreSQL", text: "PostgreSQL" },
+    { src: "/nestjs.svg", alt: "NestJS", text: "NestJS" },
+    // { src: "/postgresql.png", alt: "PostgreSQL", text: "PostgreSQL" },
   ];
 
   const deploymentSkills = [
@@ -114,6 +131,7 @@ const Skills = () => {
   const otherSkills = [
     { src: "/Git.png", alt: "Git", text: "Git" },
     { src: "/githubLogo.png", alt: "Github", text: "Github" },
+    { src: "/confluence.svg", alt: "Confluence", text: "Confluence" },
   ];
 
   return (
