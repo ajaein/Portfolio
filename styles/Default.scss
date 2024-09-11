@@ -12,6 +12,10 @@ body {
   margin-left: auto;
   -webkit-font-smoothing: antialiased;
   user-select: none;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -196,6 +200,5 @@ button {
   margin-top: 40px;
   @include anime-default;
 }
-
 
 @import "./Variable.scss";
