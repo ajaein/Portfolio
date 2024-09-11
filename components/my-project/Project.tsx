@@ -38,9 +38,9 @@ const Project = ({
           <MenuItem
             onClick={onModal}
             title="Others"
-            src="/porfolio_img/springcrud.PNG"
+            src="/porfolio_img/springcrud.png"
             alt="others-01"
-            marqueeText="Others - 000"
+            marqueeText="Others - 001"
           />
         </div>
       </div>

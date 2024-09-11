@@ -48,7 +48,7 @@ function ProjectAco({ onModal }: ModalProps) {
     <Wrapper title="A.C.O. / README.md" onModal={onModal}>
       <Outline slide={<ImageSlide slide={acoSlide} />}>
         <p className={styles.contentInfoName}>ACO - Advance the Ecology</p>
-        <p className={styles.contentInfoName}>(리팩토링 진행중)</p>
+        <p className={styles.contentInfoName}>(리팩토링 예정)</p>
         <p className={styles.contentInfoDays}>
           2022.12 ~ 2023.01 · 팀 프로젝트
         </p>
