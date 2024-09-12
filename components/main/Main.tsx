@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import AboutMe from "@/components/about-me/AboutMe";
 import Canvas from "@/components/canvas/Canvas";
 
-import Translator from "@/components/project-modals/Others";
+import Others from "@/components/project-modals/Others";
 import { Footer, Navbar } from "@/components/layout";
 import Project from "@/components/my-project/Project";
 import Skills from "@/components/skill/Skills";
@@ -10,13 +10,14 @@ import ProjectAco from "@/components/project-modals/ProjectAco";
 import MyPortfolio from "@/components/project-modals/MyPortfolio";
 import { useModalToggle } from "@/hooks";
 import commonStyles from "@/styles/common.module.scss";
-
+import SereneSpaces from "../project-modals/SereneSpaces";
 
 const Main = () => {
   const [canvas, setCanvas] = useState<number>();
   const [trslModal, onTrslModalToggle] = useModalToggle();
   const [acoModal, onAcoModalToggle] = useModalToggle();
   const [portfolioModal, onPortfolioModalToggle] = useModalToggle();
+  const [sereneSpacesModal, onSereneSpacesModalToggle] = useModalToggle();
 
   const canvasRef = useRef<HTMLDivElement | null>(null);
 
@@ -30,14 +31,37 @@ const Main = () => {
 
   return (
     <>
-      <div className={`${trslModal ? `${commonStyles.modalBackdrop} show` : commonStyles.none}`}>
-        <Translator onModal={onTrslModalToggle} />
+      <div
+        className={`${
+          trslModal ? `${commonStyles.modalBackdrop} show` : commonStyles.none
+        }`}
+      >
+        <Others onModal={onTrslModalToggle} />
       </div>
-      <div className={`${acoModal ? `${commonStyles.modalBackdrop} show` : commonStyles.none}`}>
+      <div
+        className={`${
+          acoModal ? `${commonStyles.modalBackdrop} show` : commonStyles.none
+        }`}
+      >
         <ProjectAco onModal={onAcoModalToggle} />
       </div>
-      <div className={`${portfolioModal ? `${commonStyles.modalBackdrop} show` : commonStyles.none}`}>
+      <div
+        className={`${
+          portfolioModal
+            ? `${commonStyles.modalBackdrop} show`
+            : commonStyles.none
+        }`}
+      >
         <MyPortfolio onModal={onPortfolioModalToggle} />
+      </div>
+      <div
+        className={`${
+          sereneSpacesModal
+            ? `${commonStyles.modalBackdrop} show`
+            : commonStyles.none
+        }`}
+      >
+        <SereneSpaces onModal={onSereneSpacesModalToggle} />
       </div>
       <main className="main">
         <Navbar />
@@ -55,6 +79,7 @@ const Main = () => {
             onModal={onTrslModalToggle}
             onAcoModal={onAcoModalToggle}
             onPortfolioModal={onPortfolioModalToggle}
+            onSereneSpacesModal={onSereneSpacesModalToggle}
           />
         </section>
         <Footer />

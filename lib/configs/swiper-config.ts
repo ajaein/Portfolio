@@ -1,5 +1,12 @@
 import { type SwiperSlideType } from "@/types";
 
+export const sereneSpacesSlide: SwiperSlideType[] = [
+  {
+    src: "/porfolio_img/serene01.PNG",
+    alt: "serene-01",
+  },
+];
+
 export const decommiSlide: SwiperSlideType[] = [
   {
     src: "/porfolio_img/decommi1.PNG",

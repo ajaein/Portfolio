@@ -17,7 +17,7 @@ const github = [
 
 const crudTools = ["Javascript", "JQuery", "Java", "Spring", "PostgreSQL"];
 
-const Translator = ({ onModal }: ModalProps) => {
+const Others = ({ onModal }: ModalProps) => {
   return (
     <Wrapper title="Others / README.md" onModal={onModal}>
       <Outline slide={<ImageSlide slide={othersSlide} />}>
@@ -67,4 +67,4 @@ const Translator = ({ onModal }: ModalProps) => {
   );
 };
 
-export default Translator;
+export default Others;
