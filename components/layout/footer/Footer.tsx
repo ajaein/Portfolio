@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from './footer.module.scss'
+import styles from "./footer.module.scss";
 
 export const Footer = () => {
   return (
@@ -15,11 +15,12 @@ export const Footer = () => {
             rel="noreferrer noopener"
           >
             <Image
-              src="https://img.shields.io/badge/Github-000000?style=flat&logo=github&logoColor=white"
+              src="/githubLogo.png"
               alt="github"
-              width={65}
-              height={10}
+              width={24}
+              height={24}
             />
+            GitHub
           </Link>
           <Link
             className={styles.footerIcon}
@@ -28,11 +29,12 @@ export const Footer = () => {
             rel="noreferrer noopener"
           >
             <Image
-              src="https://img.shields.io/badge/Blog-000000?style=flat&logo=tistory&logoColor=white"
-              alt="github"
-              width={56}
-              height={10}
+              src="/tistory.png"
+              alt="blog"
+              width={24}
+              height={24}
             />
+            Blog
           </Link>
         </div>
       </div>

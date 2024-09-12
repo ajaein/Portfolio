@@ -124,6 +124,7 @@ const AboutMe = ({ canvas }: AboutMeProps) => {
                     &nbsp; - 다국어 번역을 위해 i18n과 구글 스프레드 시트 연동
                     (업, 다운로드)
                   </li>
+                  <li>&nbsp; - 회원 페이지 제작</li>
                 </ul>
               </CareerDetails>
             </div>
