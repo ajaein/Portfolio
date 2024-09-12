@@ -26,13 +26,13 @@ const Project = ({ onModal, onAcoModal, onPortfolioModal, onSereneSpacesModal }:
             alt="serene-01"
             marqueeText="Serene Spaces - 003"
           />
-          {/* <MenuItem
+          <MenuItem
             onClick={onAcoModal}
             title="A.C.O"
             src="/porfolio_img/aco05.PNG"
             alt="aco-05"
             marqueeText="ACO - 003"
-          /> */}
+          />
           <MenuItem
             onClick={onPortfolioModal}
             title="Portfolio Page"
