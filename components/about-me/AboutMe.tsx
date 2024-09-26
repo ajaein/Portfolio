@@ -99,7 +99,7 @@ const AboutMe = ({ canvas }: AboutMeProps) => {
                   <li>
                     · B2B 오픈마켓 서비스 Buybly
                   </li>
-                  <li>&nbsp; - 2023.10 ~</li>
+                  <li>&nbsp; - 2023.10 ~ 2024.08</li>
                   <li>&nbsp; - React 프로젝트</li>
                   <li>&nbsp; - React-hook-form, Zod도입</li>
                   <li>
